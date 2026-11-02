@@ -42,6 +42,6 @@ def test_policy_gates():
 def test_subgroup_diagnostics_cover_audit_groups():
     frame = generate_borrowers(400, seed=4)
     diagnostics = subgroup_diagnostics(frame, frame["defaulted"].to_numpy(dtype=float))
-    assert {row["group"] for row in diagnostics["age_band"]} == {"21-34", "35-49", "50+"}
-    assert sum(row["n"] for row in diagnostics["age_band"]) == len(frame)
-    assert diagnostics["employment_status"]
+    assert len(diagnostics["income_band"]) == 4
+    assert sum(row["n"] for row in diagnostics["income_band"]) == len(frame)
+    assert diagnostics["home_ownership"]

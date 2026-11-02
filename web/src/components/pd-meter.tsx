@@ -20,7 +20,7 @@ export function PdMeter({
   return (
     <div>
       <p className="text-xs tracking-[0.16em] uppercase text-muted-foreground">
-        Estimated 12-month default
+        Estimated default risk
       </p>
       <p className={cn("mt-1 font-heading text-5xl tabular-nums", color)}>
         {pct(value)}

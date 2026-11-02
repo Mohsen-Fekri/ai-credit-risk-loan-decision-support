@@ -21,8 +21,6 @@ const GROUPS = [
   {
     title: "Profile",
     keys: [
-      "age",
-      "employment_status",
       "employment_length_years",
       "home_ownership",
       "loan_purpose",

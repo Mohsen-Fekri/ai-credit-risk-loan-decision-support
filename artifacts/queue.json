@@ -1,0 +1,3476 @@
+[
+  {
+    "application_id": "LC-44995150",
+    "borrower_name": "Applicant 95150",
+    "features": {
+      "annual_income": 26227.0,
+      "loan_amount": 9325.0,
+      "debt_to_income": 0.249,
+      "credit_score": 662,
+      "employment_length_years": 10.0,
+      "credit_history_length_years": 10.4,
+      "revolving_utilization": 0.994,
+      "num_open_accounts": 17,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 0,
+      "public_records": 0,
+      "monthly_debt": 545.0,
+      "home_ownership": "RENT",
+      "loan_purpose": "debt_consolidation",
+      "verification_status": "source_verified"
+    },
+    "pd_default": 0.3756,
+    "risk_band": "severe",
+    "policy_recommendation": "refer",
+    "policy_rationale": "The file sits outside automatic approve/decline bands and needs an underwriter.",
+    "eligibility": "Conditional \u2014 refer to underwriter",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "662",
+        "raw_value": 662,
+        "shap": 0.068805,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$26,227",
+        "raw_value": 26227.0,
+        "shap": 0.067657,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "99.4%",
+        "raw_value": 0.994,
+        "shap": 0.04162,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "24.9%",
+        "raw_value": 0.249,
+        "shap": 0.02669,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.022098,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.014134,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "10.4 yrs",
+        "raw_value": 10.4,
+        "shap": 0.0106,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "17",
+        "raw_value": 17,
+        "shap": 0.009359,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "source verified",
+        "raw_value": "source_verified",
+        "shap": 0.005447,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "10.0 yrs",
+        "raw_value": 10.0,
+        "shap": 0.005255,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$9,325",
+        "raw_value": 9325.0,
+        "shap": 0.002025,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$545",
+        "raw_value": 545.0,
+        "shap": -0.000957,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000653,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.00065,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Debt consolidation",
+        "raw_value": "debt_consolidation",
+        "shap": 0.00061,
+        "direction": "raises_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "662",
+        "raw_value": 662,
+        "shap": 0.068805,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$26,227",
+        "raw_value": 26227.0,
+        "shap": 0.067657,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "99.4%",
+        "raw_value": 0.994,
+        "shap": 0.04162,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "24.9%",
+        "raw_value": 0.249,
+        "shap": 0.02669,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.022098,
+        "direction": "raises_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-65292245",
+    "borrower_name": "Applicant 92245",
+    "features": {
+      "annual_income": 35000.0,
+      "loan_amount": 8575.0,
+      "debt_to_income": 0.362,
+      "credit_score": 672,
+      "employment_length_years": 0.5,
+      "credit_history_length_years": 10.1,
+      "revolving_utilization": 0.459,
+      "num_open_accounts": 20,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 1,
+      "public_records": 0,
+      "monthly_debt": 1057.0,
+      "home_ownership": "RENT",
+      "loan_purpose": "debt_consolidation",
+      "verification_status": "verified"
+    },
+    "pd_default": 0.3471,
+    "risk_band": "severe",
+    "policy_recommendation": "refer",
+    "policy_rationale": "The file sits outside automatic approve/decline bands and needs an underwriter.",
+    "eligibility": "Conditional \u2014 refer to underwriter",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "36.2%",
+        "raw_value": 0.362,
+        "shap": 0.065801,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "672",
+        "raw_value": 672,
+        "shap": 0.055467,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$35,000",
+        "raw_value": 35000.0,
+        "shap": 0.045995,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.017878,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "1",
+        "raw_value": 1,
+        "shap": 0.017724,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "20",
+        "raw_value": 20,
+        "shap": 0.014881,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "verified",
+        "raw_value": "verified",
+        "shap": 0.006156,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "45.9%",
+        "raw_value": 0.459,
+        "shap": -0.00596,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "10.1 yrs",
+        "raw_value": 10.1,
+        "shap": 0.003586,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "0.5 yrs",
+        "raw_value": 0.5,
+        "shap": -0.00346,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Debt consolidation",
+        "raw_value": "debt_consolidation",
+        "shap": 0.001732,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$1,057",
+        "raw_value": 1057.0,
+        "shap": -0.001279,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$8,575",
+        "raw_value": 8575.0,
+        "shap": -0.001185,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000354,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000127,
+        "direction": "raises_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "36.2%",
+        "raw_value": 0.362,
+        "shap": 0.065801,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "672",
+        "raw_value": 672,
+        "shap": 0.055467,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$35,000",
+        "raw_value": 35000.0,
+        "shap": 0.045995,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.017878,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "1",
+        "raw_value": 1,
+        "shap": 0.017724,
+        "direction": "raises_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-51386506",
+    "borrower_name": "Applicant 86506",
+    "features": {
+      "annual_income": 16000.0,
+      "loan_amount": 3000.0,
+      "debt_to_income": 0.371,
+      "credit_score": 662,
+      "employment_length_years": 0.0,
+      "credit_history_length_years": 13.4,
+      "revolving_utilization": 0.365,
+      "num_open_accounts": 17,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 3,
+      "public_records": 1,
+      "monthly_debt": 494.0,
+      "home_ownership": "RENT",
+      "loan_purpose": "other",
+      "verification_status": "verified"
+    },
+    "pd_default": 0.3316,
+    "risk_band": "severe",
+    "policy_recommendation": "refer",
+    "policy_rationale": "The file sits outside automatic approve/decline bands and needs an underwriter.",
+    "eligibility": "Conditional \u2014 refer to underwriter",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$3,000",
+        "raw_value": 3000.0,
+        "shap": -0.061186,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$16,000",
+        "raw_value": 16000.0,
+        "shap": 0.058211,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "37.1%",
+        "raw_value": 0.371,
+        "shap": 0.047733,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "3",
+        "raw_value": 3,
+        "shap": 0.045231,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "662",
+        "raw_value": 662,
+        "shap": 0.038914,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "0.0 yrs",
+        "raw_value": 0.0,
+        "shap": 0.036342,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.022571,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Other",
+        "raw_value": "other",
+        "shap": 0.018997,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "36.5%",
+        "raw_value": 0.365,
+        "shap": -0.015128,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "17",
+        "raw_value": 17,
+        "shap": 0.010723,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "1",
+        "raw_value": 1,
+        "shap": -0.010468,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "verified",
+        "raw_value": "verified",
+        "shap": 0.004856,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$494",
+        "raw_value": 494.0,
+        "shap": 0.003474,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "13.4 yrs",
+        "raw_value": 13.4,
+        "shap": 0.002858,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.000839,
+        "direction": "lowers_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$3,000",
+        "raw_value": 3000.0,
+        "shap": -0.061186,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$16,000",
+        "raw_value": 16000.0,
+        "shap": 0.058211,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "37.1%",
+        "raw_value": 0.371,
+        "shap": 0.047733,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "3",
+        "raw_value": 3,
+        "shap": 0.045231,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "662",
+        "raw_value": 662,
+        "shap": 0.038914,
+        "direction": "raises_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-50497476",
+    "borrower_name": "Applicant 97476",
+    "features": {
+      "annual_income": 27000.0,
+      "loan_amount": 9525.0,
+      "debt_to_income": 0.349,
+      "credit_score": 677,
+      "employment_length_years": 0.5,
+      "credit_history_length_years": 11.7,
+      "revolving_utilization": 0.616,
+      "num_open_accounts": 15,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 1,
+      "public_records": 0,
+      "monthly_debt": 786.0,
+      "home_ownership": "RENT",
+      "loan_purpose": "debt_consolidation",
+      "verification_status": "source_verified"
+    },
+    "pd_default": 0.3192,
+    "risk_band": "elevated",
+    "policy_recommendation": "refer",
+    "policy_rationale": "The file sits outside automatic approve/decline bands and needs an underwriter.",
+    "eligibility": "Conditional \u2014 refer to underwriter",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "34.9%",
+        "raw_value": 0.349,
+        "shap": 0.057619,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$27,000",
+        "raw_value": 27000.0,
+        "shap": 0.056069,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "677",
+        "raw_value": 677,
+        "shap": 0.035628,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.017379,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "1",
+        "raw_value": 1,
+        "shap": 0.014109,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "15",
+        "raw_value": 15,
+        "shap": 0.008414,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "source verified",
+        "raw_value": "source_verified",
+        "shap": 0.007144,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "61.6%",
+        "raw_value": 0.616,
+        "shap": -0.006265,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "11.7 yrs",
+        "raw_value": 11.7,
+        "shap": -0.001779,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "0.5 yrs",
+        "raw_value": 0.5,
+        "shap": -0.001745,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$9,525",
+        "raw_value": 9525.0,
+        "shap": 0.00108,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Debt consolidation",
+        "raw_value": "debt_consolidation",
+        "shap": 0.001036,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000468,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000407,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$786",
+        "raw_value": 786.0,
+        "shap": 0.000397,
+        "direction": "raises_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "34.9%",
+        "raw_value": 0.349,
+        "shap": 0.057619,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$27,000",
+        "raw_value": 27000.0,
+        "shap": 0.056069,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "677",
+        "raw_value": 677,
+        "shap": 0.035628,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.017379,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "1",
+        "raw_value": 1,
+        "shap": 0.014109,
+        "direction": "raises_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-67245699",
+    "borrower_name": "Applicant 45699",
+    "features": {
+      "annual_income": 16056.0,
+      "loan_amount": 6500.0,
+      "debt_to_income": 0.361,
+      "credit_score": 672,
+      "employment_length_years": 0.0,
+      "credit_history_length_years": 38.8,
+      "revolving_utilization": 0.369,
+      "num_open_accounts": 12,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 0,
+      "public_records": 0,
+      "monthly_debt": 482.0,
+      "home_ownership": "OWN",
+      "loan_purpose": "debt_consolidation",
+      "verification_status": "verified"
+    },
+    "pd_default": 0.3002,
+    "risk_band": "elevated",
+    "policy_recommendation": "refer",
+    "policy_rationale": "The file sits outside automatic approve/decline bands and needs an underwriter.",
+    "eligibility": "Conditional \u2014 refer to underwriter",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$16,056",
+        "raw_value": 16056.0,
+        "shap": 0.071846,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "36.1%",
+        "raw_value": 0.361,
+        "shap": 0.058214,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "0.0 yrs",
+        "raw_value": 0.0,
+        "shap": 0.041363,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "672",
+        "raw_value": 672,
+        "shap": 0.037258,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$6,500",
+        "raw_value": 6500.0,
+        "shap": -0.015311,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.014174,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "OWN",
+        "raw_value": "OWN",
+        "shap": -0.012209,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "36.9%",
+        "raw_value": 0.369,
+        "shap": -0.009812,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "12",
+        "raw_value": 12,
+        "shap": 0.005215,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "verified",
+        "raw_value": "verified",
+        "shap": 0.003855,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$482",
+        "raw_value": 482.0,
+        "shap": 0.003307,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Debt consolidation",
+        "raw_value": "debt_consolidation",
+        "shap": 0.001327,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.001088,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "38.8 yrs",
+        "raw_value": 38.8,
+        "shap": -0.000636,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.000361,
+        "direction": "lowers_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$16,056",
+        "raw_value": 16056.0,
+        "shap": 0.071846,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "36.1%",
+        "raw_value": 0.361,
+        "shap": 0.058214,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "0.0 yrs",
+        "raw_value": 0.0,
+        "shap": 0.041363,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "672",
+        "raw_value": 672,
+        "shap": 0.037258,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$6,500",
+        "raw_value": 6500.0,
+        "shap": -0.015311,
+        "direction": "lowers_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-38624488",
+    "borrower_name": "Applicant 24488",
+    "features": {
+      "annual_income": 65000.0,
+      "loan_amount": 12000.0,
+      "debt_to_income": 0.298,
+      "credit_score": 667,
+      "employment_length_years": 10.0,
+      "credit_history_length_years": 15.3,
+      "revolving_utilization": 0.675,
+      "num_open_accounts": 21,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 3,
+      "public_records": 0,
+      "monthly_debt": 1613.0,
+      "home_ownership": "RENT",
+      "loan_purpose": "debt_consolidation",
+      "verification_status": "verified"
+    },
+    "pd_default": 0.2916,
+    "risk_band": "elevated",
+    "policy_recommendation": "refer",
+    "policy_rationale": "The file sits outside automatic approve/decline bands and needs an underwriter.",
+    "eligibility": "Conditional \u2014 refer to underwriter",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "667",
+        "raw_value": 667,
+        "shap": 0.052247,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "3",
+        "raw_value": 3,
+        "shap": 0.049464,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "29.8%",
+        "raw_value": 0.298,
+        "shap": 0.036863,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.019664,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "21",
+        "raw_value": 21,
+        "shap": 0.014301,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$65,000",
+        "raw_value": 65000.0,
+        "shap": -0.011213,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "verified",
+        "raw_value": "verified",
+        "shap": 0.003655,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "10.0 yrs",
+        "raw_value": 10.0,
+        "shap": -0.001894,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$12,000",
+        "raw_value": 12000.0,
+        "shap": -0.00134,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "15.3 yrs",
+        "raw_value": 15.3,
+        "shap": 0.001103,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "67.5%",
+        "raw_value": 0.675,
+        "shap": -0.000666,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000402,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$1,613",
+        "raw_value": 1613.0,
+        "shap": -0.000253,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000127,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Debt consolidation",
+        "raw_value": "debt_consolidation",
+        "shap": -0.000111,
+        "direction": "lowers_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "667",
+        "raw_value": 667,
+        "shap": 0.052247,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "3",
+        "raw_value": 3,
+        "shap": 0.049464,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "29.8%",
+        "raw_value": 0.298,
+        "shap": 0.036863,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.019664,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "21",
+        "raw_value": 21,
+        "shap": 0.014301,
+        "direction": "raises_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-61428780",
+    "borrower_name": "Applicant 28780",
+    "features": {
+      "annual_income": 52000.0,
+      "loan_amount": 12000.0,
+      "debt_to_income": 0.27,
+      "credit_score": 677,
+      "employment_length_years": 5.0,
+      "credit_history_length_years": 13.4,
+      "revolving_utilization": 0.713,
+      "num_open_accounts": 19,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 0,
+      "public_records": 0,
+      "monthly_debt": 1171.0,
+      "home_ownership": "RENT",
+      "loan_purpose": "debt_consolidation",
+      "verification_status": "source_verified"
+    },
+    "pd_default": 0.2085,
+    "risk_band": "elevated",
+    "policy_recommendation": "refer",
+    "policy_rationale": "The file sits outside automatic approve/decline bands and needs an underwriter.",
+    "eligibility": "Conditional \u2014 refer to underwriter",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "27.0%",
+        "raw_value": 0.27,
+        "shap": 0.03307,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "677",
+        "raw_value": 677,
+        "shap": 0.031145,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.015522,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.012079,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "19",
+        "raw_value": 19,
+        "shap": 0.009685,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "source verified",
+        "raw_value": "source_verified",
+        "shap": 0.006704,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "5.0 yrs",
+        "raw_value": 5.0,
+        "shap": -0.003599,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "71.3%",
+        "raw_value": 0.713,
+        "shap": -0.003365,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "13.4 yrs",
+        "raw_value": 13.4,
+        "shap": 0.002367,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$1,171",
+        "raw_value": 1171.0,
+        "shap": -0.001025,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$52,000",
+        "raw_value": 52000.0,
+        "shap": 0.000485,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000231,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Debt consolidation",
+        "raw_value": "debt_consolidation",
+        "shap": 0.00021,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$12,000",
+        "raw_value": 12000.0,
+        "shap": -0.000183,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000105,
+        "direction": "raises_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "27.0%",
+        "raw_value": 0.27,
+        "shap": 0.03307,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "677",
+        "raw_value": 677,
+        "shap": 0.031145,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.015522,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.012079,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "19",
+        "raw_value": 19,
+        "shap": 0.009685,
+        "direction": "raises_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-66574861",
+    "borrower_name": "Applicant 74861",
+    "features": {
+      "annual_income": 32000.0,
+      "loan_amount": 12000.0,
+      "debt_to_income": 0.15,
+      "credit_score": 687,
+      "employment_length_years": 1.0,
+      "credit_history_length_years": 3.7,
+      "revolving_utilization": 0.292,
+      "num_open_accounts": 16,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 1,
+      "public_records": 0,
+      "monthly_debt": 401.0,
+      "home_ownership": "MORTGAGE",
+      "loan_purpose": "debt_consolidation",
+      "verification_status": "verified"
+    },
+    "pd_default": 0.2051,
+    "risk_band": "elevated",
+    "policy_recommendation": "refer",
+    "policy_rationale": "The file sits outside automatic approve/decline bands and needs an underwriter.",
+    "eligibility": "Conditional \u2014 refer to underwriter",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$32,000",
+        "raw_value": 32000.0,
+        "shap": 0.044822,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "3.7 yrs",
+        "raw_value": 3.7,
+        "shap": 0.028462,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "687",
+        "raw_value": 687,
+        "shap": 0.016637,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "MORTGAGE",
+        "raw_value": "MORTGAGE",
+        "shap": -0.015247,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "1.0 yrs",
+        "raw_value": 1.0,
+        "shap": -0.00633,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "16",
+        "raw_value": 16,
+        "shap": 0.005928,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "1",
+        "raw_value": 1,
+        "shap": 0.005554,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "15.0%",
+        "raw_value": 0.15,
+        "shap": -0.005118,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "29.2%",
+        "raw_value": 0.292,
+        "shap": -0.004385,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$401",
+        "raw_value": 401.0,
+        "shap": 0.002556,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$12,000",
+        "raw_value": 12000.0,
+        "shap": 0.002221,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "verified",
+        "raw_value": "verified",
+        "shap": 0.00168,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.000963,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000394,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Debt consolidation",
+        "raw_value": "debt_consolidation",
+        "shap": -0.000369,
+        "direction": "lowers_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$32,000",
+        "raw_value": 32000.0,
+        "shap": 0.044822,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "3.7 yrs",
+        "raw_value": 3.7,
+        "shap": 0.028462,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "687",
+        "raw_value": 687,
+        "shap": 0.016637,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "MORTGAGE",
+        "raw_value": "MORTGAGE",
+        "shap": -0.015247,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "1.0 yrs",
+        "raw_value": 1.0,
+        "shap": -0.00633,
+        "direction": "lowers_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-56037927",
+    "borrower_name": "Applicant 37927",
+    "features": {
+      "annual_income": 45000.0,
+      "loan_amount": 8700.0,
+      "debt_to_income": 0.356,
+      "credit_score": 712,
+      "employment_length_years": 3.0,
+      "credit_history_length_years": 14.9,
+      "revolving_utilization": 0.409,
+      "num_open_accounts": 19,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 1,
+      "public_records": 0,
+      "monthly_debt": 1334.0,
+      "home_ownership": "MORTGAGE",
+      "loan_purpose": "debt_consolidation",
+      "verification_status": "source_verified"
+    },
+    "pd_default": 0.1674,
+    "risk_band": "moderate",
+    "policy_recommendation": "refer",
+    "policy_rationale": "The file sits outside automatic approve/decline bands and needs an underwriter.",
+    "eligibility": "Conditional \u2014 refer to underwriter",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "35.6%",
+        "raw_value": 0.356,
+        "shap": 0.04404,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "712",
+        "raw_value": 712,
+        "shap": -0.022644,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$45,000",
+        "raw_value": 45000.0,
+        "shap": 0.01328,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "MORTGAGE",
+        "raw_value": "MORTGAGE",
+        "shap": -0.012998,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "19",
+        "raw_value": 19,
+        "shap": 0.010021,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "1",
+        "raw_value": 1,
+        "shap": 0.009635,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "40.9%",
+        "raw_value": 0.409,
+        "shap": -0.007274,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "source verified",
+        "raw_value": "source_verified",
+        "shap": 0.005149,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "14.9 yrs",
+        "raw_value": 14.9,
+        "shap": 0.00456,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "3.0 yrs",
+        "raw_value": 3.0,
+        "shap": -0.00285,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$1,334",
+        "raw_value": 1334.0,
+        "shap": -0.002278,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$8,700",
+        "raw_value": 8700.0,
+        "shap": -0.001478,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Debt consolidation",
+        "raw_value": "debt_consolidation",
+        "shap": 0.000634,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.0003,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 6e-06,
+        "direction": "raises_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "35.6%",
+        "raw_value": 0.356,
+        "shap": 0.04404,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "712",
+        "raw_value": 712,
+        "shap": -0.022644,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$45,000",
+        "raw_value": 45000.0,
+        "shap": 0.01328,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "MORTGAGE",
+        "raw_value": "MORTGAGE",
+        "shap": -0.012998,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "19",
+        "raw_value": 19,
+        "shap": 0.010021,
+        "direction": "raises_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-65614804",
+    "borrower_name": "Applicant 14804",
+    "features": {
+      "annual_income": 70000.0,
+      "loan_amount": 3000.0,
+      "debt_to_income": 0.142,
+      "credit_score": 687,
+      "employment_length_years": 5.0,
+      "credit_history_length_years": 10.2,
+      "revolving_utilization": 0.62,
+      "num_open_accounts": 9,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 2,
+      "public_records": 0,
+      "monthly_debt": 827.0,
+      "home_ownership": "RENT",
+      "loan_purpose": "debt_consolidation",
+      "verification_status": "verified"
+    },
+    "pd_default": 0.1533,
+    "risk_band": "moderate",
+    "policy_recommendation": "refer",
+    "policy_rationale": "The file sits outside automatic approve/decline bands and needs an underwriter.",
+    "eligibility": "Conditional \u2014 refer to underwriter",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "2",
+        "raw_value": 2,
+        "shap": 0.034669,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "687",
+        "raw_value": 687,
+        "shap": 0.016244,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$3,000",
+        "raw_value": 3000.0,
+        "shap": -0.014633,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$70,000",
+        "raw_value": 70000.0,
+        "shap": -0.013523,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.011507,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "14.2%",
+        "raw_value": 0.142,
+        "shap": -0.007983,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "62.0%",
+        "raw_value": 0.62,
+        "shap": -0.005036,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "5.0 yrs",
+        "raw_value": 5.0,
+        "shap": -0.004992,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "10.2 yrs",
+        "raw_value": 10.2,
+        "shap": 0.003532,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "verified",
+        "raw_value": "verified",
+        "shap": 0.002441,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Debt consolidation",
+        "raw_value": "debt_consolidation",
+        "shap": 0.001554,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$827",
+        "raw_value": 827.0,
+        "shap": -0.000824,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "9",
+        "raw_value": 9,
+        "shap": 0.000714,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000519,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.000145,
+        "direction": "lowers_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "2",
+        "raw_value": 2,
+        "shap": 0.034669,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "687",
+        "raw_value": 687,
+        "shap": 0.016244,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$3,000",
+        "raw_value": 3000.0,
+        "shap": -0.014633,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$70,000",
+        "raw_value": 70000.0,
+        "shap": -0.013523,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.011507,
+        "direction": "raises_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-57833932",
+    "borrower_name": "Applicant 33932",
+    "features": {
+      "annual_income": 45000.0,
+      "loan_amount": 16000.0,
+      "debt_to_income": 0.119,
+      "credit_score": 667,
+      "employment_length_years": 7.0,
+      "credit_history_length_years": 15.8,
+      "revolving_utilization": 0.652,
+      "num_open_accounts": 7,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 0,
+      "public_records": 0,
+      "monthly_debt": 445.0,
+      "home_ownership": "OWN",
+      "loan_purpose": "credit_card",
+      "verification_status": "verified"
+    },
+    "pd_default": 0.136,
+    "risk_band": "moderate",
+    "policy_recommendation": "approve",
+    "policy_rationale": "Risk, score, and leverage are within the standard eligibility window.",
+    "eligibility": "Eligible \u2014 recommend approve",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "667",
+        "raw_value": 667,
+        "shap": 0.031732,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Credit card refinancing",
+        "raw_value": "credit_card",
+        "shap": -0.019166,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$16,000",
+        "raw_value": 16000.0,
+        "shap": 0.017184,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "11.9%",
+        "raw_value": 0.119,
+        "shap": -0.013762,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.011219,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$45,000",
+        "raw_value": 45000.0,
+        "shap": 0.010499,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "7",
+        "raw_value": 7,
+        "shap": -0.006444,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$445",
+        "raw_value": 445.0,
+        "shap": 0.00363,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "15.8 yrs",
+        "raw_value": 15.8,
+        "shap": -0.002242,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "65.2%",
+        "raw_value": 0.652,
+        "shap": -0.002205,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "7.0 yrs",
+        "raw_value": 7.0,
+        "shap": -0.001822,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "OWN",
+        "raw_value": "OWN",
+        "shap": -0.001402,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "verified",
+        "raw_value": "verified",
+        "shap": 0.001246,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000765,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -4.5e-05,
+        "direction": "lowers_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "667",
+        "raw_value": 667,
+        "shap": 0.031732,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Credit card refinancing",
+        "raw_value": "credit_card",
+        "shap": -0.019166,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$16,000",
+        "raw_value": 16000.0,
+        "shap": 0.017184,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "11.9%",
+        "raw_value": 0.119,
+        "shap": -0.013762,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.011219,
+        "direction": "lowers_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-40961093",
+    "borrower_name": "Applicant 61093",
+    "features": {
+      "annual_income": 50000.0,
+      "loan_amount": 10300.0,
+      "debt_to_income": 0.279,
+      "credit_score": 697,
+      "employment_length_years": 10.0,
+      "credit_history_length_years": 16.3,
+      "revolving_utilization": 0.718,
+      "num_open_accounts": 14,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 0,
+      "public_records": 0,
+      "monthly_debt": 1163.0,
+      "home_ownership": "OWN",
+      "loan_purpose": "credit_card",
+      "verification_status": "source_verified"
+    },
+    "pd_default": 0.1298,
+    "risk_band": "moderate",
+    "policy_recommendation": "approve",
+    "policy_rationale": "Risk, score, and leverage are within the standard eligibility window.",
+    "eligibility": "Eligible \u2014 recommend approve",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "27.9%",
+        "raw_value": 0.279,
+        "shap": 0.021048,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Credit card refinancing",
+        "raw_value": "credit_card",
+        "shap": -0.020011,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.010422,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "14",
+        "raw_value": 14,
+        "shap": 0.007212,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$50,000",
+        "raw_value": 50000.0,
+        "shap": 0.004469,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "OWN",
+        "raw_value": "OWN",
+        "shap": -0.004408,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "source verified",
+        "raw_value": "source_verified",
+        "shap": 0.004252,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "71.8%",
+        "raw_value": 0.718,
+        "shap": -0.002856,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$10,300",
+        "raw_value": 10300.0,
+        "shap": 0.002332,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "16.3 yrs",
+        "raw_value": 16.3,
+        "shap": -0.001229,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "697",
+        "raw_value": 697,
+        "shap": 0.000541,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "10.0 yrs",
+        "raw_value": 10.0,
+        "shap": -0.000428,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$1,163",
+        "raw_value": 1163.0,
+        "shap": -0.00026,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000176,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 8.1e-05,
+        "direction": "raises_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "27.9%",
+        "raw_value": 0.279,
+        "shap": 0.021048,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Credit card refinancing",
+        "raw_value": "credit_card",
+        "shap": -0.020011,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.010422,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "14",
+        "raw_value": 14,
+        "shap": 0.007212,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$50,000",
+        "raw_value": 50000.0,
+        "shap": 0.004469,
+        "direction": "raises_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-40307171",
+    "borrower_name": "Applicant 07171",
+    "features": {
+      "annual_income": 82500.0,
+      "loan_amount": 10000.0,
+      "debt_to_income": 0.142,
+      "credit_score": 692,
+      "employment_length_years": 9.0,
+      "credit_history_length_years": 10.5,
+      "revolving_utilization": 0.406,
+      "num_open_accounts": 5,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 0,
+      "public_records": 0,
+      "monthly_debt": 979.0,
+      "home_ownership": "RENT",
+      "loan_purpose": "debt_consolidation",
+      "verification_status": "source_verified"
+    },
+    "pd_default": 0.0828,
+    "risk_band": "moderate",
+    "policy_recommendation": "approve",
+    "policy_rationale": "Risk, score, and leverage are within the standard eligibility window.",
+    "eligibility": "Eligible \u2014 recommend approve",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$82,500",
+        "raw_value": 82500.0,
+        "shap": -0.030427,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.010214,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.008557,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "14.2%",
+        "raw_value": 0.142,
+        "shap": -0.00829,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "40.6%",
+        "raw_value": 0.406,
+        "shap": -0.006204,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "5",
+        "raw_value": 5,
+        "shap": -0.005836,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "source verified",
+        "raw_value": "source_verified",
+        "shap": 0.004507,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "10.5 yrs",
+        "raw_value": 10.5,
+        "shap": 0.003936,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$979",
+        "raw_value": 979.0,
+        "shap": -0.001787,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$10,000",
+        "raw_value": 10000.0,
+        "shap": -0.000675,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000263,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "692",
+        "raw_value": 692,
+        "shap": -0.000167,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "9.0 yrs",
+        "raw_value": 9.0,
+        "shap": -0.000141,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Debt consolidation",
+        "raw_value": "debt_consolidation",
+        "shap": -6.7e-05,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 5.2e-05,
+        "direction": "raises_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$82,500",
+        "raw_value": 82500.0,
+        "shap": -0.030427,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.010214,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.008557,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "14.2%",
+        "raw_value": 0.142,
+        "shap": -0.00829,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "40.6%",
+        "raw_value": 0.406,
+        "shap": -0.006204,
+        "direction": "lowers_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-60075901",
+    "borrower_name": "Applicant 75901",
+    "features": {
+      "annual_income": 40000.0,
+      "loan_amount": 5800.0,
+      "debt_to_income": 0.258,
+      "credit_score": 722,
+      "employment_length_years": 2.0,
+      "credit_history_length_years": 8.1,
+      "revolving_utilization": 0.539,
+      "num_open_accounts": 9,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 0,
+      "public_records": 0,
+      "monthly_debt": 861.0,
+      "home_ownership": "RENT",
+      "loan_purpose": "credit_card",
+      "verification_status": "not_verified"
+    },
+    "pd_default": 0.0728,
+    "risk_band": "low",
+    "policy_recommendation": "approve",
+    "policy_rationale": "Low modelled default risk, credit score and DTI sit inside the standard approve band.",
+    "eligibility": "Eligible \u2014 recommend approve",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "722",
+        "raw_value": 722,
+        "shap": -0.036361,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Credit card refinancing",
+        "raw_value": "credit_card",
+        "shap": -0.019597,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "25.8%",
+        "raw_value": 0.258,
+        "shap": 0.014161,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$40,000",
+        "raw_value": 40000.0,
+        "shap": 0.013724,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$5,800",
+        "raw_value": 5800.0,
+        "shap": -0.012285,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.008502,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.006932,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "2.0 yrs",
+        "raw_value": 2.0,
+        "shap": -0.005823,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "not verified",
+        "raw_value": "not_verified",
+        "shap": -0.004983,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "53.9%",
+        "raw_value": 0.539,
+        "shap": -0.004334,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "9",
+        "raw_value": 9,
+        "shap": 0.00091,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$861",
+        "raw_value": 861.0,
+        "shap": -0.000313,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "8.1 yrs",
+        "raw_value": 8.1,
+        "shap": -0.000301,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.0003,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -1.4e-05,
+        "direction": "lowers_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "722",
+        "raw_value": 722,
+        "shap": -0.036361,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Credit card refinancing",
+        "raw_value": "credit_card",
+        "shap": -0.019597,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "25.8%",
+        "raw_value": 0.258,
+        "shap": 0.014161,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$40,000",
+        "raw_value": 40000.0,
+        "shap": 0.013724,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$5,800",
+        "raw_value": 5800.0,
+        "shap": -0.012285,
+        "direction": "lowers_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-50497164",
+    "borrower_name": "Applicant 97164",
+    "features": {
+      "annual_income": 88000.0,
+      "loan_amount": 22000.0,
+      "debt_to_income": 0.124,
+      "credit_score": 697,
+      "employment_length_years": 1.0,
+      "credit_history_length_years": 19.3,
+      "revolving_utilization": 0.62,
+      "num_open_accounts": 16,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 0,
+      "public_records": 0,
+      "monthly_debt": 909.0,
+      "home_ownership": "RENT",
+      "loan_purpose": "credit_card",
+      "verification_status": "source_verified"
+    },
+    "pd_default": 0.0722,
+    "risk_band": "low",
+    "policy_recommendation": "approve",
+    "policy_rationale": "Risk, score, and leverage are within the standard eligibility window.",
+    "eligibility": "Eligible \u2014 recommend approve",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$88,000",
+        "raw_value": 88000.0,
+        "shap": -0.035691,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Credit card refinancing",
+        "raw_value": "credit_card",
+        "shap": -0.017809,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "12.4%",
+        "raw_value": 0.124,
+        "shap": -0.009884,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.009331,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.008867,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$22,000",
+        "raw_value": 22000.0,
+        "shap": 0.008399,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "16",
+        "raw_value": 16,
+        "shap": 0.0053,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "62.0%",
+        "raw_value": 0.62,
+        "shap": -0.004112,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "source verified",
+        "raw_value": "source_verified",
+        "shap": 0.003586,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$909",
+        "raw_value": 909.0,
+        "shap": -0.002682,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "1.0 yrs",
+        "raw_value": 1.0,
+        "shap": -0.001974,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "697",
+        "raw_value": 697,
+        "shap": -0.001213,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "19.3 yrs",
+        "raw_value": 19.3,
+        "shap": -0.000694,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 7.6e-05,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 5.4e-05,
+        "direction": "raises_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$88,000",
+        "raw_value": 88000.0,
+        "shap": -0.035691,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Credit card refinancing",
+        "raw_value": "credit_card",
+        "shap": -0.017809,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "12.4%",
+        "raw_value": 0.124,
+        "shap": -0.009884,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.009331,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.008867,
+        "direction": "raises_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-67256174",
+    "borrower_name": "Applicant 56174",
+    "features": {
+      "annual_income": 154000.0,
+      "loan_amount": 25000.0,
+      "debt_to_income": 0.046,
+      "credit_score": 687,
+      "employment_length_years": 10.0,
+      "credit_history_length_years": 21.0,
+      "revolving_utilization": 0.673,
+      "num_open_accounts": 14,
+      "num_delinquencies_24m": 2,
+      "num_inquiries_6m": 0,
+      "public_records": 0,
+      "monthly_debt": 593.0,
+      "home_ownership": "MORTGAGE",
+      "loan_purpose": "credit_card",
+      "verification_status": "source_verified"
+    },
+    "pd_default": 0.0665,
+    "risk_band": "low",
+    "policy_recommendation": "approve",
+    "policy_rationale": "Risk, score, and leverage are within the standard eligibility window.",
+    "eligibility": "Eligible \u2014 recommend approve",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$154,000",
+        "raw_value": 154000.0,
+        "shap": -0.03689,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$25,000",
+        "raw_value": 25000.0,
+        "shap": 0.018732,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Credit card refinancing",
+        "raw_value": "credit_card",
+        "shap": -0.016451,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "4.6%",
+        "raw_value": 0.046,
+        "shap": -0.014778,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "MORTGAGE",
+        "raw_value": "MORTGAGE",
+        "shap": -0.011441,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "21.0 yrs",
+        "raw_value": 21.0,
+        "shap": -0.010974,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.007683,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "687",
+        "raw_value": 687,
+        "shap": 0.005284,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "source verified",
+        "raw_value": "source_verified",
+        "shap": 0.004816,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "2",
+        "raw_value": 2,
+        "shap": 0.004534,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "14",
+        "raw_value": 14,
+        "shap": 0.004056,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "10.0 yrs",
+        "raw_value": 10.0,
+        "shap": -0.002456,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$593",
+        "raw_value": 593.0,
+        "shap": 0.001843,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "67.3%",
+        "raw_value": 0.673,
+        "shap": -0.001012,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.000368,
+        "direction": "lowers_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$154,000",
+        "raw_value": 154000.0,
+        "shap": -0.03689,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$25,000",
+        "raw_value": 25000.0,
+        "shap": 0.018732,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Credit card refinancing",
+        "raw_value": "credit_card",
+        "shap": -0.016451,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "4.6%",
+        "raw_value": 0.046,
+        "shap": -0.014778,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "MORTGAGE",
+        "raw_value": "MORTGAGE",
+        "shap": -0.011441,
+        "direction": "lowers_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-43430078",
+    "borrower_name": "Applicant 30078",
+    "features": {
+      "annual_income": 70000.0,
+      "loan_amount": 8000.0,
+      "debt_to_income": 0.14,
+      "credit_score": 697,
+      "employment_length_years": 2.0,
+      "credit_history_length_years": 27.4,
+      "revolving_utilization": 0.529,
+      "num_open_accounts": 7,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 0,
+      "public_records": 0,
+      "monthly_debt": 815.0,
+      "home_ownership": "OWN",
+      "loan_purpose": "credit_card",
+      "verification_status": "not_verified"
+    },
+    "pd_default": 0.0601,
+    "risk_band": "low",
+    "policy_recommendation": "approve",
+    "policy_rationale": "Risk, score, and leverage are within the standard eligibility window.",
+    "eligibility": "Eligible \u2014 recommend approve",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Credit card refinancing",
+        "raw_value": "credit_card",
+        "shap": -0.018488,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$70,000",
+        "raw_value": 70000.0,
+        "shap": -0.013613,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.008502,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "14.0%",
+        "raw_value": 0.14,
+        "shap": -0.006809,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$8,000",
+        "raw_value": 8000.0,
+        "shap": -0.005769,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "not verified",
+        "raw_value": "not_verified",
+        "shap": -0.005486,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "27.4 yrs",
+        "raw_value": 27.4,
+        "shap": -0.003155,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "7",
+        "raw_value": 7,
+        "shap": -0.003154,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "52.9%",
+        "raw_value": 0.529,
+        "shap": -0.003112,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$815",
+        "raw_value": 815.0,
+        "shap": -0.000651,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "2.0 yrs",
+        "raw_value": 2.0,
+        "shap": -0.000507,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 0.000368,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "697",
+        "raw_value": 697,
+        "shap": -0.000137,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -6.8e-05,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "OWN",
+        "raw_value": "OWN",
+        "shap": -4.6e-05,
+        "direction": "lowers_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Credit card refinancing",
+        "raw_value": "credit_card",
+        "shap": -0.018488,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$70,000",
+        "raw_value": 70000.0,
+        "shap": -0.013613,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.008502,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "14.0%",
+        "raw_value": 0.14,
+        "shap": -0.006809,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$8,000",
+        "raw_value": 8000.0,
+        "shap": -0.005769,
+        "direction": "lowers_risk"
+      }
+    ]
+  },
+  {
+    "application_id": "LC-61388752",
+    "borrower_name": "Applicant 88752",
+    "features": {
+      "annual_income": 50000.0,
+      "loan_amount": 12500.0,
+      "debt_to_income": 0.192,
+      "credit_score": 752,
+      "employment_length_years": 4.0,
+      "credit_history_length_years": 9.1,
+      "revolving_utilization": 0.402,
+      "num_open_accounts": 19,
+      "num_delinquencies_24m": 0,
+      "num_inquiries_6m": 0,
+      "public_records": 0,
+      "monthly_debt": 802.0,
+      "home_ownership": "RENT",
+      "loan_purpose": "debt_consolidation",
+      "verification_status": "source_verified"
+    },
+    "pd_default": 0.056,
+    "risk_band": "low",
+    "policy_recommendation": "approve",
+    "policy_rationale": "Low modelled default risk, credit score and DTI sit inside the standard approve band.",
+    "eligibility": "Eligible \u2014 recommend approve",
+    "status": "pending",
+    "decision": null,
+    "decision_notes": null,
+    "shap": [
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "752",
+        "raw_value": 752,
+        "shap": -0.066849,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.010025,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.006235,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "4.0 yrs",
+        "raw_value": 4.0,
+        "shap": -0.005224,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "40.2%",
+        "raw_value": 0.402,
+        "shap": -0.004303,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "verification_status",
+        "label": "Income verification",
+        "value": "source verified",
+        "raw_value": "source_verified",
+        "shap": 0.00312,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_open_accounts",
+        "label": "Open credit lines",
+        "value": "19",
+        "raw_value": 19,
+        "shap": 0.002338,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_amount",
+        "label": "Requested amount",
+        "value": "$12,500",
+        "raw_value": 12500.0,
+        "shap": 0.001245,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "debt_to_income",
+        "label": "Debt-to-income ratio",
+        "value": "19.2%",
+        "raw_value": 0.192,
+        "shap": 0.001102,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "num_delinquencies_24m",
+        "label": "Delinquencies (24 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.000586,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "monthly_debt",
+        "label": "Monthly debt service",
+        "value": "$802",
+        "raw_value": 802.0,
+        "shap": -0.000275,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "annual_income",
+        "label": "Annual income",
+        "value": "$50,000",
+        "raw_value": 50000.0,
+        "shap": -0.000165,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "credit_history_length_years",
+        "label": "Credit history (years)",
+        "value": "9.1 yrs",
+        "raw_value": 9.1,
+        "shap": 9.1e-05,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "public_records",
+        "label": "Public records",
+        "value": "0",
+        "raw_value": 0,
+        "shap": 5.8e-05,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "loan_purpose",
+        "label": "Loan purpose",
+        "value": "Debt consolidation",
+        "raw_value": "debt_consolidation",
+        "shap": -2.8e-05,
+        "direction": "lowers_risk"
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "credit_score",
+        "label": "Credit score",
+        "value": "752",
+        "raw_value": 752,
+        "shap": -0.066849,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "num_inquiries_6m",
+        "label": "Inquiries (6 mo)",
+        "value": "0",
+        "raw_value": 0,
+        "shap": -0.010025,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "home_ownership",
+        "label": "Housing",
+        "value": "RENT",
+        "raw_value": "RENT",
+        "shap": 0.006235,
+        "direction": "raises_risk"
+      },
+      {
+        "feature": "employment_length_years",
+        "label": "Years in role",
+        "value": "4.0 yrs",
+        "raw_value": 4.0,
+        "shap": -0.005224,
+        "direction": "lowers_risk"
+      },
+      {
+        "feature": "revolving_utilization",
+        "label": "Revolving utilization",
+        "value": "40.2%",
+        "raw_value": 0.402,
+        "shap": -0.004303,
+        "direction": "lowers_risk"
+      }
+    ]
+  }
+]

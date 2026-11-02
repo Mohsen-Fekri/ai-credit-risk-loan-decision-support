@@ -1,11 +1,14 @@
-"""Synthetic borrower generation with a known credit-risk data generating process."""
+"""Borrower data: the prepared Lending Club table, plus a small synthetic generator used by the tests."""
 
 from __future__ import annotations
 
 import numpy as np
 import pandas as pd
 
+from pathlib import Path
+
 from credit_risk.config import (
+    ROOT,
     EMPLOYMENT_STATUS,
     HOME_OWNERSHIP,
     LOAN_PURPOSE,
@@ -80,7 +83,7 @@ def generate_borrowers(n: int = 12000, seed: int = RANDOM_STATE) -> pd.DataFrame
     loan_purpose = rng.choice(
         LOAN_PURPOSE,
         size=n,
-        p=[0.38, 0.14, 0.12, 0.08, 0.09, 0.11, 0.08],
+        p=[0.38, 0.14, 0.12, 0.08, 0.09, 0.11, 0.08, 0.0],
     )
     loan_amount = _clip(
         np.round(annual_income * rng.uniform(0.08, 0.42, size=n), -2),
@@ -189,3 +192,16 @@ def generate_borrowers(n: int = 12000, seed: int = RANDOM_STATE) -> pd.DataFrame
         }
     )
     return frame
+
+
+LENDING_CLUB_PATH = ROOT / "data" / "lending_club_36m_2012_2015.csv.gz"
+
+
+def load_lending_club(path: Path = LENDING_CLUB_PATH) -> pd.DataFrame:
+    """Load the table written by scripts/prepare_lending_club.py."""
+    if not Path(path).exists():
+        raise FileNotFoundError(
+            f"{path} not found. Download accepted_2007_to_2018Q4.csv and run "
+            "python scripts/prepare_lending_club.py <csv> first."
+        )
+    return pd.read_csv(path)

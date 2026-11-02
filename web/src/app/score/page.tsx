@@ -22,17 +22,14 @@ const DEFAULTS: Record<string, string | number> = {
   num_inquiries_6m: 1,
   public_records: 0,
   monthly_debt: 1480,
-  age: 34,
   home_ownership: "RENT",
   loan_purpose: "debt_consolidation",
-  employment_status: "employed",
   verification_status: "source_verified",
 };
 
 const SELECTS: Record<string, string[]> = {
   home_ownership: ["MORTGAGE", "OWN", "RENT", "OTHER"],
   loan_purpose: Object.keys(PURPOSE_LABELS),
-  employment_status: ["employed", "self_employed", "retired", "unemployed"],
   verification_status: ["verified", "source_verified", "not_verified"],
 };
 
@@ -49,7 +46,6 @@ const FIELDS: { key: string; label: string; step?: string }[] = [
   { key: "num_delinquencies_24m", label: "Delinquencies (24 mo)" },
   { key: "num_inquiries_6m", label: "Inquiries (6 mo)" },
   { key: "public_records", label: "Public records" },
-  { key: "age", label: "Age" },
 ];
 
 export default function ScorePage() {

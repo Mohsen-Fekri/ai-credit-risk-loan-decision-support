@@ -1,17 +1,20 @@
 {
   "name": "Northbridge default-risk XGBoost",
-  "task": "binary classification \u2014 12-month default",
+  "task": "binary classification: charge-off over a 36-month loan",
+  "data": "Lending Club 36-month loans issued 2012-2014 (train) and 2015 (test)",
   "algorithm": "XGBoost (hist) inside a scikit-learn ColumnTransformer pipeline",
   "explainability": "TreeSHAP, interventional, probability output, grouped to original features",
-  "training_rows": 9600,
-  "test_rows": 2400,
-  "positive_rate_train": 0.2013,
+  "training_rows": 306288,
+  "test_rows": 282898,
+  "positive_rate_train": 0.1325,
   "excluded_from_model": [
-    "age"
+    "Lending Club grade",
+    "sub-grade",
+    "interest rate"
   ],
   "audit_groups": [
-    "age_band",
-    "employment_status"
+    "income_band",
+    "home_ownership"
   ],
   "decision_support": true,
   "automated_decisioning": false

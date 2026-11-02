@@ -17,7 +17,7 @@ from sklearn.metrics import (
 from sklearn.model_selection import train_test_split
 
 from credit_risk.config import ALL_FEATURES, MODEL_FEATURES, RANDOM_STATE, TARGET, get_artifacts_dir
-from credit_risk.data import generate_borrowers
+from credit_risk.data import generate_borrowers, load_lending_club
 from credit_risk.explain import CreditExplainer
 from credit_risk.pipeline import FittedBundle, fit_bundle, predict_pd
 from credit_risk.policy import eligibility_label, recommend, risk_band
@@ -67,15 +67,15 @@ def subgroup_diagnostics(
     pd_hat: np.ndarray,
     threshold: float = 0.5,
 ) -> dict[str, list[dict]]:
-    """Report group-level error rates for model review, not decisioning."""
-    audit = frame[[TARGET, "age", "employment_status"]].copy()
+    """Report group-level error rates for model review, not decisioning.
+
+    Lending Club data has no protected attributes, so this checks income quartiles and housing instead.
+    """
+    audit = frame[[TARGET, "annual_income", "home_ownership"]].copy()
     audit["pd_hat"] = pd_hat
     audit["prediction"] = (pd_hat >= threshold).astype(int)
-    audit["age_band"] = pd.cut(
-        audit["age"],
-        bins=[20, 34, 49, 100],
-        labels=["21-34", "35-49", "50+"],
-        include_lowest=True,
+    audit["income_band"] = pd.qcut(
+        audit["annual_income"], 4, labels=["Q1 (lowest)", "Q2", "Q3", "Q4 (highest)"], duplicates="drop"
     ).astype(str)
 
     def summarize(column: str) -> list[dict]:
@@ -97,8 +97,8 @@ def subgroup_diagnostics(
         return rows
 
     return {
-        "age_band": summarize("age_band"),
-        "employment_status": summarize("employment_status"),
+        "income_band": summarize("income_band"),
+        "home_ownership": summarize("home_ownership"),
     }
 
 
@@ -150,21 +150,30 @@ def train(
     n_samples: int = 12000,
     output_dir: Path | None = None,
     random_state: int = RANDOM_STATE,
+    data: pd.DataFrame | None = None,
+    threshold: float = 0.5,
 ) -> dict:
+    """Fit and evaluate the model. With no ``data`` it uses the synthetic generator (for tests)."""
     artifacts_dir = Path(output_dir or get_artifacts_dir())
     artifacts_dir.mkdir(parents=True, exist_ok=True)
 
-    data = generate_borrowers(n_samples, seed=random_state)
-    train_df, test_df = train_test_split(
-        data,
-        test_size=0.2,
-        stratify=data[TARGET],
-        random_state=random_state,
-    )
+    if data is None:
+        data = generate_borrowers(n_samples, seed=random_state)
+    if "issue_year" in data:
+        # Out-of-time test: fit on older loans, score the most recent year, like a lender would.
+        test_year = int(data["issue_year"].max())
+        train_df, test_df = data[data["issue_year"] < test_year], data[data["issue_year"] == test_year]
+    else:
+        train_df, test_df = train_test_split(
+            data,
+            test_size=0.2,
+            stratify=data[TARGET],
+            random_state=random_state,
+        )
     bundle = fit_bundle(train_df, random_state=random_state)
     pd_test = predict_pd(bundle.pipeline, test_df)
-    metrics = evaluate(test_df[TARGET].to_numpy(), pd_test)
-    metrics["subgroup_diagnostics"] = subgroup_diagnostics(test_df, pd_test)
+    metrics = evaluate(test_df[TARGET].to_numpy(), pd_test, threshold)
+    metrics["subgroup_diagnostics"] = subgroup_diagnostics(test_df, pd_test, threshold)
 
     background = train_df.sample(min(100, len(train_df)), random_state=random_state)
     explainer = CreditExplainer(bundle, background)
@@ -199,14 +208,19 @@ def train(
         json.dumps(
             {
                 "name": "Northbridge default-risk XGBoost",
-                "task": "binary classification — 12-month default",
+                "task": "binary classification: charge-off over a 36-month loan",
+                "data": (
+                    "Lending Club 36-month loans issued 2012-2014 (train) and 2015 (test)"
+                    if "issue_year" in data
+                    else "synthetic borrowers"
+                ),
                 "algorithm": "XGBoost (hist) inside a scikit-learn ColumnTransformer pipeline",
                 "explainability": "TreeSHAP, interventional, probability output, grouped to original features",
                 "training_rows": int(len(train_df)),
                 "test_rows": int(len(test_df)),
                 "positive_rate_train": round(float(train_df[TARGET].mean()), 4),
-                "excluded_from_model": ["age"],
-                "audit_groups": ["age_band", "employment_status"],
+                "excluded_from_model": ["Lending Club grade", "sub-grade", "interest rate"],
+                "audit_groups": ["income_band", "home_ownership"],
                 "decision_support": True,
                 "automated_decisioning": False,
             },

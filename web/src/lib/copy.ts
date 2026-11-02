@@ -11,10 +11,8 @@ export const FEATURE_LABELS: Record<string, string> = {
   num_inquiries_6m: "Inquiries (6 mo)",
   public_records: "Public records",
   monthly_debt: "Monthly debt service",
-  age: "Age",
   home_ownership: "Housing",
   loan_purpose: "Loan purpose",
-  employment_status: "Employment",
   verification_status: "Income verification",
 };
 
@@ -25,5 +23,6 @@ export const PURPOSE_LABELS: Record<string, string> = {
   medical: "Medical",
   small_business: "Small business",
   car: "Vehicle",
+  credit_card: "Credit card refinancing",
   other: "Other",
 };

@@ -67,11 +67,11 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <p className="font-heading text-lg">Risk desk</p>
           </div>
           <p className="hidden text-sm text-muted-foreground md:block">
-            Human-in-the-loop underwriting · book 2026Q3
+            Human-in-the-loop underwriting · Lending Club 2015 test loans
           </p>
           <div className="text-right">
-            <p className="text-sm font-medium">A. Chen</p>
-            <p className="text-xs text-muted-foreground">Senior underwriter</p>
+            <p className="text-sm font-medium">Demo underwriter</p>
+            <p className="text-xs text-muted-foreground">Local demo</p>
           </div>
         </header>
         <div className="flex gap-2 overflow-x-auto border-b border-border px-4 py-2 md:hidden">

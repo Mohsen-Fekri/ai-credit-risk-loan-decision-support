@@ -67,9 +67,8 @@ class FittedBundle:
 def fit_bundle(frame: pd.DataFrame, random_state: int = 42) -> FittedBundle:
     X = frame[MODEL_FEATURES]
     y = frame[TARGET].to_numpy()
-    pos = max(int(y.sum()), 1)
-    neg = max(int(len(y) - pos), 1)
-    pipe = build_pipeline(scale_pos_weight=neg / pos, random_state=random_state)
+    # No class reweighting: the policy bands need probabilities close to real default rates.
+    pipe = build_pipeline(scale_pos_weight=1.0, random_state=random_state)
     pipe.fit(X, y)
     transformed = pipe.named_steps["preprocess"].get_feature_names_out()
     return FittedBundle(

@@ -50,6 +50,7 @@ export type ModelResponse = {
     f1: number;
     default_rate: number;
     n_test: number;
+    threshold: number;
     confusion: { tn: number; fp: number; fn: number; tp: number };
     roc_curve: { fpr: number; tpr: number }[];
   };
@@ -91,7 +92,7 @@ export const api = {
       fetch(`/backend/applications/${id}/decision`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ decision, notes, underwriter: "A. Chen" }),
+        body: JSON.stringify({ decision, notes, underwriter: "Demo underwriter" }),
       })
     ),
 };

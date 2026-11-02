@@ -12,6 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from api.schemas import BorrowerFeatures, DecisionRequest, reference_values
 from credit_risk.config import ALL_FEATURES, FEATURE_LABELS, PURPOSE_LABELS, get_artifacts_dir
+from credit_risk.data import load_lending_club
 from credit_risk.explain import CreditExplainer
 from credit_risk.pipeline import predict_pd
 from credit_risk.policy import eligibility_label, recommend, risk_band
@@ -55,7 +56,7 @@ def _ensure_artifacts():
     artifacts = get_artifacts_dir()
     model_path = artifacts / "model.joblib"
     if not model_path.exists():
-        train(output_dir=artifacts)
+        train(output_dir=artifacts, data=load_lending_club())
     return artifacts
 
 

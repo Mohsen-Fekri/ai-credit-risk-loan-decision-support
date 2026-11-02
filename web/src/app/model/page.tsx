@@ -31,7 +31,8 @@ export default async function ModelPage() {
         <h2 className="mt-1 font-heading text-4xl">Model card</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
           Binary XGBoost classifier inside a scikit-learn pipeline. It estimates
-          12-month default risk from credit and financial attributes, then a
+          the chance a 36-month loan is charged off, using only what was known
+          at application time, then a
           separate policy layer maps that probability to approve / refer /
           decline. A person still records the decision.
         </p>
@@ -79,7 +80,7 @@ export default async function ModelPage() {
           <CardHeader>
             <CardTitle>Holdout confusion</CardTitle>
             <p className="text-sm text-muted-foreground">
-              Operating point 0.50 on the test fold ({data.metrics.n_test} files).
+              Operating point {data.metrics.threshold.toFixed(2)} on the 2015 test loans ({data.metrics.n_test.toLocaleString()} files).
               Used for monitoring, not as an origination cutoff.
             </p>
           </CardHeader>
@@ -116,9 +117,10 @@ export default async function ModelPage() {
         </CardHeader>
         <CardContent className="space-y-2 text-sm leading-relaxed text-muted-foreground">
           <p>
-            Training data is fully synthetic. It is designed to look like a
-            consumer-loan book so the pipeline, explanations, and workbench can
-            be demonstrated without using real applicant records.
+            Trained on about 306,000 real 36-month Lending Club loans issued
+            2012 to 2014 and tested on about 283,000 loans issued in 2015.
+            Lending Club&apos;s own grade and interest rate are left out on
+            purpose, since they are already a risk score.
           </p>
           <p>
             The score is not a credit decision. Adverse-action, fair-lending,

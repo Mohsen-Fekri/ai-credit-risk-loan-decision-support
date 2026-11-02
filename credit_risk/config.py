@@ -27,13 +27,11 @@ NUMERIC_FEATURES = [
 CATEGORICAL_FEATURES = [
     "home_ownership",
     "loan_purpose",
-    "employment_status",
     "verification_status",
 ]
 
-AUDIT_FEATURES = ["age"]
 MODEL_FEATURES = NUMERIC_FEATURES + CATEGORICAL_FEATURES
-ALL_FEATURES = MODEL_FEATURES + AUDIT_FEATURES
+ALL_FEATURES = MODEL_FEATURES
 TARGET = "defaulted"
 
 FEATURE_LABELS = {
@@ -49,10 +47,8 @@ FEATURE_LABELS = {
     "num_inquiries_6m": "Inquiries (6 mo)",
     "public_records": "Public records",
     "monthly_debt": "Monthly debt service",
-    "age": "Age (audit only)",
     "home_ownership": "Housing",
     "loan_purpose": "Loan purpose",
-    "employment_status": "Employment",
     "verification_status": "Income verification",
 }
 
@@ -65,6 +61,7 @@ LOAN_PURPOSE = [
     "small_business",
     "car",
     "other",
+    "credit_card",
 ]
 EMPLOYMENT_STATUS = ["employed", "self_employed", "retired", "unemployed"]
 VERIFICATION_STATUS = ["verified", "source_verified", "not_verified"]
@@ -76,6 +73,7 @@ PURPOSE_LABELS = {
     "medical": "Medical",
     "small_business": "Small business",
     "car": "Vehicle",
+    "credit_card": "Credit card refinancing",
     "other": "Other",
 }
 

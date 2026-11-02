@@ -1,0 +1,77 @@
+[
+  {
+    "feature": "credit_score",
+    "label": "Credit score",
+    "mean_abs_shap": 0.027379
+  },
+  {
+    "feature": "annual_income",
+    "label": "Annual income",
+    "mean_abs_shap": 0.024604
+  },
+  {
+    "feature": "debt_to_income",
+    "label": "Debt-to-income ratio",
+    "mean_abs_shap": 0.014316
+  },
+  {
+    "feature": "num_inquiries_6m",
+    "label": "Inquiries (6 mo)",
+    "mean_abs_shap": 0.013221
+  },
+  {
+    "feature": "loan_amount",
+    "label": "Requested amount",
+    "mean_abs_shap": 0.013099
+  },
+  {
+    "feature": "home_ownership",
+    "label": "Housing",
+    "mean_abs_shap": 0.011238
+  },
+  {
+    "feature": "loan_purpose",
+    "label": "Loan purpose",
+    "mean_abs_shap": 0.009067
+  },
+  {
+    "feature": "credit_history_length_years",
+    "label": "Credit history (years)",
+    "mean_abs_shap": 0.00586
+  },
+  {
+    "feature": "revolving_utilization",
+    "label": "Revolving utilization",
+    "mean_abs_shap": 0.005429
+  },
+  {
+    "feature": "num_open_accounts",
+    "label": "Open credit lines",
+    "mean_abs_shap": 0.004698
+  },
+  {
+    "feature": "verification_status",
+    "label": "Income verification",
+    "mean_abs_shap": 0.004572
+  },
+  {
+    "feature": "employment_length_years",
+    "label": "Years in role",
+    "mean_abs_shap": 0.004449
+  },
+  {
+    "feature": "monthly_debt",
+    "label": "Monthly debt service",
+    "mean_abs_shap": 0.002117
+  },
+  {
+    "feature": "public_records",
+    "label": "Public records",
+    "mean_abs_shap": 0.000959
+  },
+  {
+    "feature": "num_delinquencies_24m",
+    "label": "Delinquencies (24 mo)",
+    "mean_abs_shap": 0.000899
+  }
+]

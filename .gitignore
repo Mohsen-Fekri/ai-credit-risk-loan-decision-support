@@ -12,6 +12,6 @@ web/.turbo/
 *.log
 .DS_Store
 assets/
-artifacts/*
-!artifacts/metrics.json
-!artifacts/model_card.json
+
+# Downloaded datasets
+data/

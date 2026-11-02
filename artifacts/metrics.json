@@ -1,19 +1,19 @@
 {
-  "roc_auc": 0.7987,
-  "gini": 0.5973,
-  "pr_auc": 0.5722,
-  "brier": 0.1691,
-  "ks": 0.4627,
-  "threshold": 0.5,
-  "precision": 0.4295,
-  "recall": 0.6625,
-  "f1": 0.5212,
-  "default_rate": 0.2013,
+  "roc_auc": 0.6649,
+  "gini": 0.3298,
+  "pr_auc": 0.2441,
+  "brier": 0.1215,
+  "ks": 0.237,
+  "threshold": 0.2,
+  "precision": 0.2707,
+  "recall": 0.2979,
+  "f1": 0.2836,
+  "default_rate": 0.1488,
   "confusion": {
-    "tn": 1492,
-    "fp": 425,
-    "fn": 163,
-    "tp": 320
+    "tn": 206999,
+    "fp": 33794,
+    "fn": 29564,
+    "tp": 12541
   },
   "roc_curve": [
     {
@@ -21,230 +21,234 @@
       "tpr": 0.0
     },
     {
-      "fpr": 0.0037,
-      "tpr": 0.0994
+      "fpr": 0.0108,
+      "tpr": 0.0342
     },
     {
-      "fpr": 0.0083,
-      "tpr": 0.1594
+      "fpr": 0.0226,
+      "tpr": 0.066
     },
     {
-      "fpr": 0.013,
-      "tpr": 0.1988
+      "fpr": 0.0355,
+      "tpr": 0.096
     },
     {
-      "fpr": 0.0193,
-      "tpr": 0.2422
+      "fpr": 0.0486,
+      "tpr": 0.1247
     },
     {
-      "fpr": 0.0276,
-      "tpr": 0.2692
+      "fpr": 0.0626,
+      "tpr": 0.1544
     },
     {
-      "fpr": 0.0339,
-      "tpr": 0.294
+      "fpr": 0.0773,
+      "tpr": 0.1829
     },
     {
-      "fpr": 0.0407,
-      "tpr": 0.3292
+      "fpr": 0.0918,
+      "tpr": 0.2119
     },
     {
-      "fpr": 0.0475,
-      "tpr": 0.3561
+      "fpr": 0.107,
+      "tpr": 0.2394
     },
     {
-      "fpr": 0.0532,
-      "tpr": 0.3872
+      "fpr": 0.1225,
+      "tpr": 0.2679
     },
     {
-      "fpr": 0.061,
-      "tpr": 0.4161
+      "fpr": 0.1385,
+      "tpr": 0.2948
     },
     {
-      "fpr": 0.0689,
-      "tpr": 0.4369
+      "fpr": 0.156,
+      "tpr": 0.3223
     },
     {
-      "fpr": 0.0751,
-      "tpr": 0.4783
+      "fpr": 0.1741,
+      "tpr": 0.35
     },
     {
-      "fpr": 0.084,
-      "tpr": 0.501
+      "fpr": 0.192,
+      "tpr": 0.3769
     },
     {
-      "fpr": 0.0991,
-      "tpr": 0.5217
+      "fpr": 0.2096,
+      "tpr": 0.403
     },
     {
-      "fpr": 0.1075,
-      "tpr": 0.5445
+      "fpr": 0.2272,
+      "tpr": 0.4291
     },
     {
-      "fpr": 0.1184,
-      "tpr": 0.5673
+      "fpr": 0.2462,
+      "tpr": 0.4556
     },
     {
-      "fpr": 0.1294,
-      "tpr": 0.5901
+      "fpr": 0.2662,
+      "tpr": 0.4811
     },
     {
-      "fpr": 0.157,
-      "tpr": 0.6087
+      "fpr": 0.2861,
+      "tpr": 0.5059
     },
     {
-      "fpr": 0.1711,
-      "tpr": 0.6273
+      "fpr": 0.306,
+      "tpr": 0.5309
     },
     {
-      "fpr": 0.2008,
-      "tpr": 0.648
+      "fpr": 0.3275,
+      "tpr": 0.5555
     },
     {
-      "fpr": 0.2233,
-      "tpr": 0.6667
+      "fpr": 0.3496,
+      "tpr": 0.5793
     },
     {
-      "fpr": 0.2415,
-      "tpr": 0.6812
+      "fpr": 0.3716,
+      "tpr": 0.604
     },
     {
-      "fpr": 0.2723,
-      "tpr": 0.706
+      "fpr": 0.3924,
+      "tpr": 0.6281
     },
     {
-      "fpr": 0.2853,
-      "tpr": 0.7226
+      "fpr": 0.4156,
+      "tpr": 0.6516
     },
     {
-      "fpr": 0.2968,
-      "tpr": 0.7371
+      "fpr": 0.439,
+      "tpr": 0.6755
     },
     {
-      "fpr": 0.3135,
-      "tpr": 0.7536
+      "fpr": 0.4639,
+      "tpr": 0.6989
     },
     {
-      "fpr": 0.3224,
-      "tpr": 0.7681
+      "fpr": 0.4875,
+      "tpr": 0.722
     },
     {
-      "fpr": 0.3542,
-      "tpr": 0.7909
+      "fpr": 0.5133,
+      "tpr": 0.7449
     },
     {
-      "fpr": 0.3824,
-      "tpr": 0.8075
+      "fpr": 0.5386,
+      "tpr": 0.7674
     },
     {
-      "fpr": 0.4382,
-      "tpr": 0.8219
+      "fpr": 0.5656,
+      "tpr": 0.7893
     },
     {
-      "fpr": 0.4669,
-      "tpr": 0.8364
+      "fpr": 0.5936,
+      "tpr": 0.8108
     },
     {
-      "fpr": 0.4846,
-      "tpr": 0.8509
+      "fpr": 0.6232,
+      "tpr": 0.832
     },
     {
-      "fpr": 0.517,
-      "tpr": 0.8696
+      "fpr": 0.6537,
+      "tpr": 0.8536
     },
     {
-      "fpr": 0.5498,
-      "tpr": 0.8841
+      "fpr": 0.6865,
+      "tpr": 0.8744
     },
     {
-      "fpr": 0.5858,
-      "tpr": 0.8986
+      "fpr": 0.7207,
+      "tpr": 0.8953
     },
     {
-      "fpr": 0.6255,
-      "tpr": 0.913
+      "fpr": 0.7591,
+      "tpr": 0.9167
     },
     {
-      "fpr": 0.6651,
-      "tpr": 0.9275
+      "fpr": 0.8005,
+      "tpr": 0.9379
     },
     {
-      "fpr": 0.7058,
-      "tpr": 0.942
+      "fpr": 0.8448,
+      "tpr": 0.9585
     },
     {
-      "fpr": 0.7621,
-      "tpr": 0.9565
+      "fpr": 0.8998,
+      "tpr": 0.9794
     },
     {
-      "fpr": 0.8153,
-      "tpr": 0.971
-    },
-    {
-      "fpr": 0.8529,
-      "tpr": 0.9855
+      "fpr": 0.9956,
+      "tpr": 0.9996
     }
   ],
-  "n_test": 2400,
+  "n_test": 282898,
   "subgroup_diagnostics": {
-    "age_band": [
+    "income_band": [
       {
-        "group": "21-34",
-        "n": 659,
-        "observed_default_rate": 0.2716,
-        "mean_predicted_pd": 0.4801,
-        "true_positive_rate": 0.7263,
-        "false_positive_rate": 0.3333
+        "group": "Q1 (lowest)",
+        "n": 71757,
+        "observed_default_rate": 0.1908,
+        "mean_predicted_pd": 0.1812,
+        "true_positive_rate": 0.5046,
+        "false_positive_rate": 0.3304
       },
       {
-        "group": "35-49",
-        "n": 751,
-        "observed_default_rate": 0.221,
-        "mean_predicted_pd": 0.4317,
-        "true_positive_rate": 0.6988,
-        "false_positive_rate": 0.2598
+        "group": "Q2",
+        "n": 71624,
+        "observed_default_rate": 0.1557,
+        "mean_predicted_pd": 0.1422,
+        "true_positive_rate": 0.2861,
+        "false_positive_rate": 0.1442
       },
       {
-        "group": "50+",
-        "n": 990,
-        "observed_default_rate": 0.1394,
-        "mean_predicted_pd": 0.3177,
-        "true_positive_rate": 0.5362,
-        "false_positive_rate": 0.1326
+        "group": "Q3",
+        "n": 72937,
+        "observed_default_rate": 0.1362,
+        "mean_predicted_pd": 0.1166,
+        "true_positive_rate": 0.1758,
+        "false_positive_rate": 0.0668
+      },
+      {
+        "group": "Q4 (highest)",
+        "n": 66580,
+        "observed_default_rate": 0.1101,
+        "mean_predicted_pd": 0.0928,
+        "true_positive_rate": 0.0948,
+        "false_positive_rate": 0.0284
       }
     ],
-    "employment_status": [
+    "home_ownership": [
       {
-        "group": "employed",
-        "n": 1724,
-        "observed_default_rate": 0.1769,
-        "mean_predicted_pd": 0.3817,
-        "true_positive_rate": 0.6492,
-        "false_positive_rate": 0.2086
+        "group": "MORTGAGE",
+        "n": 129698,
+        "observed_default_rate": 0.1206,
+        "mean_predicted_pd": 0.1097,
+        "true_positive_rate": 0.1512,
+        "false_positive_rate": 0.0572
       },
       {
-        "group": "retired",
-        "n": 181,
-        "observed_default_rate": 0.2155,
-        "mean_predicted_pd": 0.3824,
-        "true_positive_rate": 0.5385,
-        "false_positive_rate": 0.2113
+        "group": "OTHER",
+        "n": 1,
+        "observed_default_rate": 0.0,
+        "mean_predicted_pd": 0.0776,
+        "true_positive_rate": 0.0,
+        "false_positive_rate": 0.0
       },
       {
-        "group": "self_employed",
-        "n": 334,
-        "observed_default_rate": 0.2006,
-        "mean_predicted_pd": 0.3744,
-        "true_positive_rate": 0.6269,
-        "false_positive_rate": 0.1723
+        "group": "OWN",
+        "n": 31784,
+        "observed_default_rate": 0.1582,
+        "mean_predicted_pd": 0.1404,
+        "true_positive_rate": 0.3107,
+        "false_positive_rate": 0.1629
       },
       {
-        "group": "unemployed",
-        "n": 161,
-        "observed_default_rate": 0.4472,
-        "mean_predicted_pd": 0.6383,
-        "true_positive_rate": 0.8194,
-        "false_positive_rate": 0.5955
+        "group": "RENT",
+        "n": 121415,
+        "observed_default_rate": 0.1765,
+        "mean_predicted_pd": 0.158,
+        "true_positive_rate": 0.4018,
+        "false_positive_rate": 0.2291
       }
     ]
   }

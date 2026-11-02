@@ -32,7 +32,7 @@ export default async function QueuePage() {
         </p>
         <h2 className="mt-1 font-heading text-4xl">Review queue</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-          Each file has a modelled 12-month default probability and a policy
+          Each file is a real Lending Club loan from 2015 with a modelled default probability and a policy
           recommendation. Open a file to see which borrower attributes moved
           the score, then record your own decision.
         </p>

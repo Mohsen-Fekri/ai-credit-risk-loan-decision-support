@@ -5,7 +5,6 @@ from typing import Any, Literal, Optional
 from pydantic import BaseModel, Field
 
 from credit_risk.config import (
-    EMPLOYMENT_STATUS,
     HOME_OWNERSHIP,
     LOAN_PURPOSE,
     VERIFICATION_STATUS,
@@ -25,10 +24,8 @@ class BorrowerFeatures(BaseModel):
     num_inquiries_6m: int = Field(ge=0, le=20)
     public_records: int = Field(ge=0, le=10)
     monthly_debt: float = Field(ge=0)
-    age: int = Field(ge=18, le=100)
     home_ownership: str
     loan_purpose: str
-    employment_status: str
     verification_status: str
 
     model_config = {
@@ -46,10 +43,8 @@ class BorrowerFeatures(BaseModel):
                 "num_inquiries_6m": 1,
                 "public_records": 0,
                 "monthly_debt": 1480,
-                "age": 34,
                 "home_ownership": "RENT",
                 "loan_purpose": "debt_consolidation",
-                "employment_status": "employed",
                 "verification_status": "source_verified",
             }
         }
@@ -59,7 +54,7 @@ class BorrowerFeatures(BaseModel):
 class DecisionRequest(BaseModel):
     decision: Literal["approve", "refer", "decline"]
     notes: str = Field(min_length=3, max_length=2000)
-    underwriter: str = "A. Chen"
+    underwriter: str = "Demo underwriter"
 
 
 class ScoreResponse(BaseModel):
@@ -83,6 +78,5 @@ def reference_values() -> dict[str, list[str]]:
     return {
         "home_ownership": HOME_OWNERSHIP,
         "loan_purpose": LOAN_PURPOSE,
-        "employment_status": EMPLOYMENT_STATUS,
         "verification_status": VERIFICATION_STATUS,
     }
