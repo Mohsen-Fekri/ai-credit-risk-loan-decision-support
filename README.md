@@ -1,6 +1,6 @@
 # Credit Risk Decision Support
 
-![CI](https://github.com/Justin-Fekri/ai-credit-risk-loan-decision-support/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Mohsen-Fekri/ai-credit-risk-loan-decision-support/actions/workflows/ci.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 A tool for loan underwriters, trained on about 590,000 real Lending Club loans. An XGBoost model estimates the chance that a borrower won't pay back a 36-month loan, SHAP explains which parts of the application pushed that number up or down, and a set of policy rules turns it into a suggestion: approve, refer, or decline. The underwriter still makes the call and writes down why.
